@@ -9,6 +9,13 @@
 import UIKit
 
 @UIApplicationMain
+/*
+Attributes in Swift start with an @ symbol and can be seen as instructions for the compiler.
+The @UIApplicationMain attribute tells the compiler that AppDelegate is the class that
+should be used as the application delegate.
+Delegate Meaning-
+delegate allows one object to send message to other object when any event occurs.
+*/
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
