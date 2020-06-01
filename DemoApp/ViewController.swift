@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var myLable: UILabel!
     @IBOutlet var myButton: UIButton!
+    @IBOutlet var myLable11: UILabel!
+       @IBOutlet var myButton11: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +28,14 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
+    @IBAction func myButtonClicked111111(_ sender: UIButton) {
+           print(sender.classForCoder)
+           print(sender.superclass as Any)
+           myButton.setTitle("New button", for: UIControl.State.normal)
+           let alertController = UIAlertController(title: "Welcome to My First app", message: "Hello world", preferredStyle: UIAlertController.Style.alert)
+           
+           alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+           present(alertController, animated: true, completion: nil)
+       }
 }
 

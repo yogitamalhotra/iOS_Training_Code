@@ -26,7 +26,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Hello World"/>
                                 <connections>
-                                    <action selector="myButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gq2-fT-BU1"/>
+                                    <action selector="myButtonClicked111111:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jW5-bD-Wuv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-gq-gc3">
+                                <rect key="frame" x="176" y="328" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hello World"/>
+                                <connections>
+                                    <action selector="myButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUI-Sd-DxK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="myButton" destination="Fyi-ZY-i47" id="xD9-Ww-coV"/>
+                        <outlet property="myButton11" destination="8AB-gq-gc3" id="6Ed-PT-qqz"/>
                         <outlet property="myLable" destination="py8-D3-xl5" id="oW5-1B-Tin"/>
                     </connections>
                 </viewController>
