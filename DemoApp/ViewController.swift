@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var myLable11: UILabel!
        @IBOutlet var myButton11: UIButton!
 
+    @IBOutlet weak var passDataButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,5 +38,27 @@ class ViewController: UIViewController {
            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
            present(alertController, animated: true, completion: nil)
        }
+
+    @IBAction func passDataOnClick(_ sender: Any) {
+        let vc = SecondaryViewController(nibName: "SecondaryViewController", bundle: nil)
+        vc.text = "Ashok"
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      /*  if segue.destination is AutoLayoutViewController {
+            let vc = segue.destination as? AutoLayoutViewController
+            vc?.userText = "Yogita Malhotra"
+        }
+ */
+     /*   if let vc = segue.destination as? AutoLayoutViewController {
+                   vc.userText = "Yogita Malhotra"
+               }
+ */
+        if segue.identifier == "autoLayout" {
+            let vc = segue.destination as? AutoLayoutViewController
+                       vc?.userText = "Yogita Malhotra"
+        }
+    }
 }
 
