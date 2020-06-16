@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080465982498848D0027864E /* ResturantCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080465972498848D0027864E /* ResturantCollectionView.swift */; };
 		080B047C2477D71500F8C7E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B047B2477D71500F8C7E5 /* AppDelegate.swift */; };
 		080B047E2477D71500F8C7E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B047D2477D71500F8C7E5 /* SceneDelegate.swift */; };
 		080B04802477D71500F8C7E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B047F2477D71500F8C7E5 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080465972498848D0027864E /* ResturantCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantCollectionView.swift; sourceTree = "<group>"; };
 		080B04782477D71500F8C7E5 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		080B047B2477D71500F8C7E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		080B047D2477D71500F8C7E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				08E226C12488AE470023AB1A /* SecondaryViewController.swift */,
 				08E226C52488B3300023AB1A /* AutoLayoutViewController.swift */,
 				08879391248F47380029B413 /* ResturantTableViewController.swift */,
+				080465972498848D0027864E /* ResturantCollectionView.swift */,
 				08E226C32488AEC00023AB1A /* SecondaryViewController.xib */,
 				080B04812477D71500F8C7E5 /* Main.storyboard */,
 				080B04842477D71600F8C7E5 /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 			files = (
 				080B04802477D71500F8C7E5 /* ViewController.swift in Sources */,
 				080B047C2477D71500F8C7E5 /* AppDelegate.swift in Sources */,
+				080465982498848D0027864E /* ResturantCollectionView.swift in Sources */,
 				08879392248F47380029B413 /* ResturantTableViewController.swift in Sources */,
 				080B047E2477D71500F8C7E5 /* SceneDelegate.swift in Sources */,
 				08E226C22488AE470023AB1A /* SecondaryViewController.swift in Sources */,
