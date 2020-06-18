@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yzv-iu-fCp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bd4-n4-1Ya">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134.375" y="117.25352112676056"/>
+            <point key="canvasLocation" x="2131.875" y="117.25352112676056"/>
         </scene>
         <!--Auto Layout-->
         <scene sceneID="PKc-03-iYs">
@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHF-NM-EfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="117"/>
+            <point key="canvasLocation" x="3018.75" y="116.19718309859155"/>
         </scene>
         <!--StackView-->
         <scene sceneID="MqG-Fu-waM">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxP-KC-chF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807.5" y="767.95774647887322"/>
+            <point key="canvasLocation" x="2805" y="767.95774647887322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uGs-PR-BTW">
@@ -318,7 +318,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZN-9v-Mym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.75" y="609.50704225352115"/>
+            <point key="canvasLocation" x="1061.25" y="609.50704225352115"/>
         </scene>
         <!--Resturant Collection View-->
         <scene sceneID="P2j-Ql-45T">
@@ -370,6 +370,123 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thc-EH-tiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="63.75" y="-758.45070422535207"/>
+        </scene>
+        <!--Data Persistance View Controller-->
+        <scene sceneID="Q2b-1z-1Rf">
+            <objects>
+                <viewController id="pUu-Tr-bfR" customClass="DataPersistanceViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7Y-0f-uSS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-Ui-LtV">
+                                <rect key="frame" x="34" y="66" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pUu-Tr-bfR" id="ayG-7w-Lhf"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YdJ-lt-YZy">
+                                <rect key="frame" x="36" y="118" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pUu-Tr-bfR" id="xaL-6U-s9S"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5z-Zf-QyL">
+                                <rect key="frame" x="36" y="173" width="248" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pUu-Tr-bfR" id="baK-Tc-amE"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWV-Yz-xhc">
+                                <rect key="frame" x="118" y="252" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveBtnClicked:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="deb-oF-red"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-zj-akO">
+                                <rect key="frame" x="120" y="345" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="retriveJUserDefaultDataAction:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="hAM-1c-PRC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-XX-LgU">
+                                <rect key="frame" x="67" y="414" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save password to keychain"/>
+                                <connections>
+                                    <action selector="savePasswordTokeychaiACTION:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="oq4-uK-trW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfP-Tc-Hex">
+                                <rect key="frame" x="67" y="452" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get fruit plist"/>
+                                <connections>
+                                    <action selector="getFruitPlist:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="gqm-n5-bQg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR8-lC-wYt">
+                                <rect key="frame" x="67" y="490" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Preference plist"/>
+                                <connections>
+                                    <action selector="getCodablePlistData:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="ymW-E5-gT0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-xw-yx2">
+                                <rect key="frame" x="73" y="518" width="197" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="wrinting Datato plist"/>
+                                <connections>
+                                    <action selector="WritingDataToPlist:" destination="pUu-Tr-bfR" eventType="touchUpInside" id="dSo-hu-bub"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2r3-XL-NXb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Xh-aS-cbi"/>
+                    <connections>
+                        <outlet property="emailtxtfld" destination="YdJ-lt-YZy" id="nem-FM-7yu"/>
+                        <outlet property="nameTxtFld" destination="GVf-Ui-LtV" id="Bu4-wl-FsK"/>
+                        <outlet property="passwordTxtFld" destination="w5z-Zf-QyL" id="SN6-pN-Qwq"/>
+                        <outlet property="saveBtn" destination="dWV-Yz-xhc" id="R8N-wF-t1E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMS-nn-8sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="624.29577464788736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4UM-qI-35N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bd4-n4-1Ya" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oSV-v9-fE9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pUu-Tr-bfR" kind="relationship" relationship="rootViewController" id="vq0-i1-HqD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDt-Ks-31O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622.5" y="624.29577464788736"/>
         </scene>
     </scenes>
     <resources>
