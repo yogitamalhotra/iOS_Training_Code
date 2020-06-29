@@ -7,6 +7,33 @@
 //
 
 import UIKit
+//Extensions can add computed instance properties and computed type properties to existing types.
+protocol ActivityDelegateProtocol {
+    var activityIndicator: UIView? {get set}
+}
+enum ToggleState {
+    case on
+    case off
+}
+extension ActivityDelegateProtocol {
+    //The workaround to use stored properties inside the extensions is using the methods objc_getAssociatedObject and objc_setAssociatedObject which allow us to store an object associated to a key.
+    //: extensions may not contain stored properties
+   // var togglestst = ToggleState.off
+    
+    
+    var activityIndicator : UIView? {
+        get{
+            return nil
+        }
+        set{
+            print("\(String(describing: newValue))")
+        }
+    }
+}
+
+protocol delegateMove {
+    func moveMethod() 
+}
 
 class ViewController: UIViewController {
     @IBOutlet var myLable: UILabel!
@@ -19,6 +46,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         myLable.text = "Lable Text 1"
+        myLable.textColor = UIColor.init(hex: "0000FF")
+        let thread = Thread(target:self, selector:#selector(doSomething), object:nil)
+        thread.start()
+
+    }
+    
+    @objc func doSomething() {
+        print("Hello")
     }
     @IBAction func myButtonClicked(_ sender: UIButton) {
         print(sender.classForCoder)
